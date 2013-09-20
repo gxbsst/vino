@@ -1,0 +1,1044 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Anps's Azul v1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-11-21 14:53+0100\n"
+"PO-Revision-Date: 2013-05-30 14:58:01+0000\n"
+"Last-Translator: \n"
+"Language-Team: Anps\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Textdomain-Support: yes"
+
+#: attachment.php:14
+#, php-format
+#@ azul
+msgid "Return to %s"
+msgstr "Return to %s"
+
+#. translators: %s - title of parent post
+#: attachment.php:16
+#, php-format
+#@ azul
+msgid "<span>&larr;</span> %s"
+msgstr "<span>&larr;</span> %s"
+
+#: attachment.php:22
+#, php-format
+#@ azul
+msgid "By %2$s"
+msgstr "By %2$s"
+
+#: attachment.php:33
+#, php-format
+#@ azul
+msgid "Published %2$s"
+msgstr "Published %2$s"
+
+#: attachment.php:43
+#, php-format
+#@ azul
+msgid "Full size is %s pixels"
+msgstr "Full size is %s pixels"
+
+#: attachment.php:46
+#@ azul
+msgid "Link to full-size image"
+msgstr "Link to full-size image"
+
+#: attachment.php:53
+#: attachment.php:92
+#: onecolumn-page.php:22
+#@ azul
+msgid "Edit"
+msgstr "Edit"
+
+#: attachment.php:88
+#@ azul
+msgid "Continue reading &rarr;"
+msgstr "Continue reading &rarr;"
+
+#: attachment.php:89
+#: onecolumn-page.php:21
+#@ azul
+msgid "Pages:"
+msgstr "Pages:"
+
+#: author.php:24
+#, php-format
+#@ azul
+msgid "Author Archives: %s"
+msgstr "Author Archives: %s"
+
+#: author.php:31
+#, php-format
+#@ azul
+msgid "About %s"
+msgstr "About %s"
+
+#: comments.php:2
+#@ azul
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "This post is password protected. Enter the password to view any comments."
+
+#: comments.php:13
+#: loop.php:249
+#: search.php:18
+#: single.php:244
+#@ azul
+#@ azul
+msgid "comments"
+msgstr "comments"
+
+#: comments.php:22
+#@ azul
+msgid "&larr; Older Comments"
+msgstr "&larr; Older Comments"
+
+#: comments.php:23
+#@ azul
+msgid "Newer Comments &rarr;"
+msgstr "Newer Comments &rarr;"
+
+#: comments.php:30
+#@ azul
+msgid "Comments are closed."
+msgstr "Comments are closed."
+
+#: comments.php:41
+#@ azul
+msgid "Name"
+msgstr "Name"
+
+#: comments.php:43
+#@ azul
+msgid "Email"
+msgstr "Email"
+
+#: comments.php:49
+#: comments.php:50
+#@ azul
+msgid "leave a comment"
+msgstr "leave a comment"
+
+#: anps-framework/helpers.php:585
+#@ azul
+msgid "Primary Navigation"
+msgstr "Primary Navigation"
+
+#. translators: header image description
+#: anps-framework/helpers.php:618
+#@ azul
+msgid "Azul default logo"
+msgstr "Azul default logo"
+
+#: anps-framework/helpers.php:462
+#, php-format
+#@ azul
+msgid "Search results for %s"
+msgstr "Search results for %s"
+
+#: anps-framework/helpers.php:465
+#: anps-framework/helpers.php:480
+#, php-format
+#@ azul
+msgid "Page %s"
+msgstr "Page %s"
+
+#: anps-framework/helpers.php:501
+#@ azul
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+
+#: anps-framework/widgets/widgets.php:35
+#@ azul
+msgid "Sidebar"
+msgstr "Sidebar"
+
+#: anps-framework/widgets/widgets.php:37
+#@ azul
+msgid "The primary widget area"
+msgstr "The primary widget area"
+
+#: anps-framework/widgets/widgets.php:45
+#@ azul
+msgid "Secondary Sidebar"
+msgstr "Secondary Sidebar"
+
+#: anps-framework/widgets/widgets.php:47
+#@ azul
+msgid "Secondary widget area"
+msgstr "Secondary widget area"
+
+#: anps-framework/widgets/widgets.php:56
+#@ azul
+msgid "First Footer Column"
+msgstr "First Footer Column"
+
+#: anps-framework/widgets/widgets.php:58
+#@ azul
+msgid "The first footer widget area"
+msgstr "The first footer widget area"
+
+#: anps-framework/widgets/widgets.php:67
+#@ azul
+msgid "Second Footer Column"
+msgstr "Second Footer Column"
+
+#: anps-framework/widgets/widgets.php:69
+#@ azul
+msgid "The second footer widget area"
+msgstr "The second footer widget area"
+
+#: anps-framework/widgets/widgets.php:78
+#@ azul
+msgid "Third Footer Column"
+msgstr "Third Footer Column"
+
+#: anps-framework/widgets/widgets.php:80
+#@ azul
+msgid "The third footer widget area"
+msgstr "The third footer widget area"
+
+#: anps-framework/widgets/widgets.php:89
+#@ azul
+msgid "Fourth Footer Column"
+msgstr "Fourth Footer Column"
+
+#: anps-framework/widgets/widgets.php:91
+#@ azul
+msgid "The fourth footer widget area"
+msgstr "The fourth footer widget area"
+
+#: anps-framework/helpers.php:535
+#, php-format
+#@ azul
+msgid "<span class=\"%1$s\">Posted on</span> %2$s <span class=\"meta-sep\">by</span> %3$s"
+msgstr "<span class=\"%1$s\">Posted on</span> %2$s <span class=\"meta-sep\">by</span> %3$s"
+
+#: anps-framework/helpers.php:548
+#, php-format
+#@ azul
+msgid "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+
+#: anps-framework/helpers.php:550
+#, php-format
+#@ azul
+msgid "This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr "This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+
+#: anps-framework/helpers.php:552
+#, php-format
+#@ azul
+msgid "Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr "Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+
+#: includes/page_titles.php:19
+#, php-format
+#@ azul
+msgid "Search Results for: %s"
+msgstr "Search Results for: %s"
+
+#: anps-framework/helpers.php:96
+#@ azul
+msgid "Taged as"
+msgstr "Taged as"
+
+#: content-portfolio.php:201
+#: loop.php:265
+#@ azul
+msgid "Read more"
+msgstr "Read more"
+
+#: loop.php:287
+#@ azul
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+
+#: sidebar-secondary.php:27
+#@ azul
+msgid "Archives"
+msgstr "Archives"
+
+#: sidebar-secondary.php:34
+#@ azul
+msgid "Meta"
+msgstr "Meta"
+
+#: admin-functions1/class-tgm-plugin-activation.php:164
+#: admin-functions1/install_plugins.php:54
+#: anps-framework/class-tgm-plugin-activation.php:164
+#: anps-framework/install_plugins.php:54
+#@ azul
+msgid "Install Required Plugins"
+msgstr "Install Required Plugins"
+
+#: admin-functions1/class-tgm-plugin-activation.php:165
+#: admin-functions1/install_plugins.php:55
+#: anps-framework/class-tgm-plugin-activation.php:165
+#: anps-framework/install_plugins.php:55
+#@ azul
+msgid "Install Plugins"
+msgstr "Install Plugins"
+
+#: admin-functions1/class-tgm-plugin-activation.php:166
+#: admin-functions1/install_plugins.php:56
+#: anps-framework/class-tgm-plugin-activation.php:166
+#: anps-framework/install_plugins.php:56
+#, php-format
+#@ azul
+msgid "Installing Plugin: %s"
+msgstr "Installing Plugin: %s"
+
+#: admin-functions1/class-tgm-plugin-activation.php:167
+#: anps-framework/class-tgm-plugin-activation.php:167
+#@ azul
+msgid "Something went wrong."
+msgstr "Something went wrong."
+
+#: admin-functions1/class-tgm-plugin-activation.php:178
+#: admin-functions1/class-tgm-plugin-activation.php:490
+#: admin-functions1/install_plugins.php:68
+#: anps-framework/class-tgm-plugin-activation.php:178
+#: anps-framework/class-tgm-plugin-activation.php:490
+#: anps-framework/install_plugins.php:68
+#@ azul
+msgid "Return to Required Plugins Installer"
+msgstr "Return to Required Plugins Installer"
+
+#: admin-functions1/class-tgm-plugin-activation.php:179
+#: admin-functions1/class-tgm-plugin-activation.php:1846
+#: admin-functions1/install_plugins.php:69
+#: anps-framework/class-tgm-plugin-activation.php:179
+#: anps-framework/class-tgm-plugin-activation.php:1846
+#: anps-framework/install_plugins.php:69
+#@ azul
+msgid "Plugin activated successfully."
+msgstr "Plugin activated successfully."
+
+#: admin-functions1/class-tgm-plugin-activation.php:180
+#: anps-framework/class-tgm-plugin-activation.php:180
+#, php-format
+#@ azul
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "All plugins installed and activated successfully. %1$s"
+
+#: admin-functions1/class-tgm-plugin-activation.php:517
+#: admin-functions1/class-tgm-plugin-activation.php:2058
+#: anps-framework/class-tgm-plugin-activation.php:517
+#: anps-framework/class-tgm-plugin-activation.php:2058
+#@ azul
+msgid "Return to the Dashboard"
+msgstr "Return to the Dashboard"
+
+#: admin-functions1/class-tgm-plugin-activation.php:545
+#: anps-framework/class-tgm-plugin-activation.php:545
+#, php-format
+#@ azul
+msgid "The following plugin was activated successfully: %s."
+msgstr "The following plugin was activated successfully: %s."
+
+#: admin-functions1/class-tgm-plugin-activation.php:704
+#: anps-framework/class-tgm-plugin-activation.php:704
+#@ azul
+msgid "Dismiss this notice"
+msgstr "Dismiss this notice"
+
+#: admin-functions1/class-tgm-plugin-activation.php:1091
+#: anps-framework/class-tgm-plugin-activation.php:1091
+#@ azul
+msgid "External Link"
+msgstr "External Link"
+
+#: admin-functions1/class-tgm-plugin-activation.php:1096
+#: anps-framework/class-tgm-plugin-activation.php:1096
+#@ azul
+msgid "Private Repository"
+msgstr "Private Repository"
+
+#: admin-functions1/class-tgm-plugin-activation.php:1099
+#: anps-framework/class-tgm-plugin-activation.php:1099
+#@ azul
+msgid "Pre-Packaged"
+msgstr "Pre-Packaged"
+
+#: admin-functions1/class-tgm-plugin-activation.php:1103
+#: anps-framework/class-tgm-plugin-activation.php:1103
+#@ azul
+msgid "WordPress Repository"
+msgstr "WordPress Repository"
+
+#: admin-functions1/class-tgm-plugin-activation.php:1106
+#: anps-framework/class-tgm-plugin-activation.php:1106
+#@ azul
+msgid "Required"
+msgstr "Required"
+
+#: admin-functions1/class-tgm-plugin-activation.php:1106
+#: anps-framework/class-tgm-plugin-activation.php:1106
+#@ azul
+msgid "Recommended"
+msgstr "Recommended"
+
+#: admin-functions1/class-tgm-plugin-activation.php:1109
+#: anps-framework/class-tgm-plugin-activation.php:1109
+#@ azul
+msgid "Not Installed"
+msgstr "Not Installed"
+
+#: admin-functions1/class-tgm-plugin-activation.php:1111
+#: anps-framework/class-tgm-plugin-activation.php:1111
+#@ azul
+msgid "Installed But Not Activated"
+msgstr "Installed But Not Activated"
+
+#: admin-functions1/class-tgm-plugin-activation.php:1281
+#: anps-framework/class-tgm-plugin-activation.php:1281
+#, php-format
+#@ azul
+msgid "No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the Dashboard\">Return to the Dashboard</a>"
+msgstr "No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the Dashboard\">Return to the Dashboard</a>"
+
+#: admin-functions1/class-tgm-plugin-activation.php:1297
+#: anps-framework/class-tgm-plugin-activation.php:1297
+#@ azul
+msgid "Plugin"
+msgstr "Plugin"
+
+#: admin-functions1/class-tgm-plugin-activation.php:1298
+#: anps-framework/class-tgm-plugin-activation.php:1298
+#@ azul
+msgid "Source"
+msgstr "Source"
+
+#: admin-functions1/class-tgm-plugin-activation.php:1299
+#: anps-framework/class-tgm-plugin-activation.php:1299
+#@ azul
+msgid "Type"
+msgstr "Type"
+
+#: admin-functions1/class-tgm-plugin-activation.php:1300
+#: anps-framework/class-tgm-plugin-activation.php:1300
+#@ azul
+msgid "Status"
+msgstr "Status"
+
+#: admin-functions1/class-tgm-plugin-activation.php:1318
+#: anps-framework/class-tgm-plugin-activation.php:1318
+#@ azul
+msgid "Install"
+msgstr "Install"
+
+#: admin-functions1/class-tgm-plugin-activation.php:1319
+#: anps-framework/class-tgm-plugin-activation.php:1319
+#@ azul
+msgid "Activate"
+msgstr "Activate"
+
+#: admin-functions1/class-tgm-plugin-activation.php:1544
+#: anps-framework/class-tgm-plugin-activation.php:1544
+#@ azul
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] "The following plugin was activated successfully:"
+msgstr[1] "The following plugins were activated successfully:"
+
+#: admin-functions1/class-tgm-plugin-activation.php:1829
+#: anps-framework/class-tgm-plugin-activation.php:1829
+#@ azul
+msgid "Install package not available."
+msgstr "Install package not available."
+
+#: admin-functions1/class-tgm-plugin-activation.php:1830
+#: anps-framework/class-tgm-plugin-activation.php:1830
+#, php-format
+#@ azul
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+
+#: admin-functions1/class-tgm-plugin-activation.php:1831
+#: anps-framework/class-tgm-plugin-activation.php:1831
+#@ azul
+msgid "Unpacking the package&#8230;"
+msgstr "Unpacking the package&#8230;"
+
+#: admin-functions1/class-tgm-plugin-activation.php:1832
+#: anps-framework/class-tgm-plugin-activation.php:1832
+#@ azul
+msgid "Installing the plugin&#8230;"
+msgstr "Installing the plugin&#8230;"
+
+#: admin-functions1/class-tgm-plugin-activation.php:1833
+#: anps-framework/class-tgm-plugin-activation.php:1833
+#@ azul
+msgid "Plugin install failed."
+msgstr "Plugin install failed."
+
+#: admin-functions1/class-tgm-plugin-activation.php:1834
+#: anps-framework/class-tgm-plugin-activation.php:1834
+#@ azul
+msgid "Plugin installed successfully."
+msgstr "Plugin installed successfully."
+
+#: admin-functions1/class-tgm-plugin-activation.php:1845
+#: anps-framework/class-tgm-plugin-activation.php:1845
+#@ azul
+msgid "Plugin activation failed."
+msgstr "Plugin activation failed."
+
+#: admin-functions1/class-tgm-plugin-activation.php:1955
+#: anps-framework/class-tgm-plugin-activation.php:1955
+#@ azul
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+
+#: admin-functions1/class-tgm-plugin-activation.php:1956
+#: anps-framework/class-tgm-plugin-activation.php:1956
+#, php-format
+#@ azul
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s installed and activated successfully."
+
+#: admin-functions1/class-tgm-plugin-activation.php:1956
+#: admin-functions1/class-tgm-plugin-activation.php:1965
+#: anps-framework/class-tgm-plugin-activation.php:1956
+#: anps-framework/class-tgm-plugin-activation.php:1965
+#@ azul
+msgid "Show Details"
+msgstr "Show Details"
+
+#: admin-functions1/class-tgm-plugin-activation.php:1956
+#: admin-functions1/class-tgm-plugin-activation.php:1965
+#: anps-framework/class-tgm-plugin-activation.php:1956
+#: anps-framework/class-tgm-plugin-activation.php:1965
+#@ azul
+msgid "Hide Details"
+msgstr "Hide Details"
+
+#: admin-functions1/class-tgm-plugin-activation.php:1957
+#: anps-framework/class-tgm-plugin-activation.php:1957
+#@ azul
+msgid "All installations and activations have been completed."
+msgstr "All installations and activations have been completed."
+
+#: admin-functions1/class-tgm-plugin-activation.php:1958
+#: anps-framework/class-tgm-plugin-activation.php:1958
+#, php-format
+#@ azul
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+
+#: admin-functions1/class-tgm-plugin-activation.php:1962
+#: anps-framework/class-tgm-plugin-activation.php:1962
+#@ azul
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr "The installation process is starting. This process may take a while on some hosts, so please be patient."
+
+#: admin-functions1/class-tgm-plugin-activation.php:1963
+#: anps-framework/class-tgm-plugin-activation.php:1963
+#, php-format
+#@ azul
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "An error occurred while installing %1$s: <strong>%2$s</strong>."
+
+#: admin-functions1/class-tgm-plugin-activation.php:1964
+#: anps-framework/class-tgm-plugin-activation.php:1964
+#, php-format
+#@ azul
+msgid "The installation of %1$s failed."
+msgstr "The installation of %1$s failed."
+
+#: admin-functions1/class-tgm-plugin-activation.php:1965
+#: anps-framework/class-tgm-plugin-activation.php:1965
+#, php-format
+#@ azul
+msgid "%1$s installed successfully."
+msgstr "%1$s installed successfully."
+
+#: admin-functions1/class-tgm-plugin-activation.php:1966
+#: anps-framework/class-tgm-plugin-activation.php:1966
+#@ azul
+msgid "All installations have been completed."
+msgstr "All installations have been completed."
+
+#: admin-functions1/class-tgm-plugin-activation.php:1967
+#: anps-framework/class-tgm-plugin-activation.php:1967
+#, php-format
+#@ azul
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Installing Plugin %1$s (%2$d/%3$d)"
+
+#: admin-functions1/install_plugins.php:57
+#: anps-framework/install_plugins.php:57
+#@ azul
+msgid "Something went wrong with the plugin API."
+msgstr "Something went wrong with the plugin API."
+
+#: admin-functions1/install_plugins.php:70
+#: anps-framework/install_plugins.php:70
+#, php-format
+#@ azul
+msgid "All plugins installed and activated successfully. %s"
+msgstr "All plugins installed and activated successfully. %s"
+
+#: admin-functions1/shortcodes.php:13
+#@ azul
+msgid "Recent projects"
+msgstr "Recent projects"
+
+#: admin-functions1/importer/parsers.php:42
+#: admin-functions1/importer/parsers.php:63
+#: anps-framework/classes/importer/parsers.php:42
+#: anps-framework/classes/importer/parsers.php:63
+#@ wordpress-importer
+msgid "There was an error when reading this WXR file"
+msgstr "There was an error when reading this WXR file"
+
+#: admin-functions1/importer/parsers.php:43
+#: anps-framework/classes/importer/parsers.php:43
+#@ wordpress-importer
+msgid "Details are shown above. The importer will now try again with a different parser..."
+msgstr "Details are shown above. The importer will now try again with a different parser..."
+
+#: admin-functions1/importer/parsers.php:67
+#: admin-functions1/importer/parsers.php:72
+#: admin-functions1/importer/parsers.php:280
+#: admin-functions1/importer/parsers.php:469
+#: anps-framework/classes/importer/parsers.php:67
+#: anps-framework/classes/importer/parsers.php:72
+#: anps-framework/classes/importer/parsers.php:280
+#: anps-framework/classes/importer/parsers.php:469
+#@ wordpress-importer
+msgid "This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr "This does not appear to be a WXR file, missing/invalid WXR version number"
+
+#: admin-functions1/importer/wordpress-importer.php:245
+#: admin-functions1/importer/wordpress-importer.php:263
+#: admin-functions1/importer/wordpress-importer.php:365
+#: admin-functions1/importer/wordpress-importer.php:373
+#: admin-functions1/importer/wordpress-importer.php:391
+#: anps-framework/classes/importer/wordpress-importer.php:245
+#: anps-framework/classes/importer/wordpress-importer.php:263
+#: anps-framework/classes/importer/wordpress-importer.php:365
+#: anps-framework/classes/importer/wordpress-importer.php:373
+#: anps-framework/classes/importer/wordpress-importer.php:391
+#@ wordpress-importer
+msgid "Sorry, there has been an error."
+msgstr "Sorry, there has been an error."
+
+#: admin-functions1/importer/wordpress-importer.php:247
+#: anps-framework/classes/importer/wordpress-importer.php:247
+#@ wordpress-importer
+msgid "The file does not exist, please try again."
+msgstr "The file does not exist, please try again."
+
+#: admin-functions1/importer/wordpress-importer.php:333
+#: anps-framework/classes/importer/wordpress-importer.php:333
+#@ wordpress-importer
+msgid "All done."
+msgstr "All done."
+
+#: admin-functions1/importer/wordpress-importer.php:333
+#: anps-framework/classes/importer/wordpress-importer.php:333
+#@ wordpress-importer
+msgid "Have fun!"
+msgstr "Have fun!"
+
+#: admin-functions1/importer/wordpress-importer.php:335
+#: anps-framework/classes/importer/wordpress-importer.php:335
+#@ wordpress-importer
+msgid "Remember to update the passwords and roles of imported users."
+msgstr "Remember to update the passwords and roles of imported users."
+
+#: admin-functions1/importer/wordpress-importer.php:375
+#: anps-framework/classes/importer/wordpress-importer.php:375
+#, php-format
+#@ wordpress-importer
+msgid "The export file could not be found at <code>%s</code>. It is likely that this was caused by a permissions problem."
+msgstr "The export file could not be found at <code>%s</code>. It is likely that this was caused by a permissions problem."
+
+#: admin-functions1/importer/wordpress-importer.php:407
+#: anps-framework/classes/importer/wordpress-importer.php:407
+#, php-format
+#@ wordpress-importer
+msgid "This WXR file (version %s) may not be supported by this version of the importer. Please consider updating."
+msgstr "This WXR file (version %s) may not be supported by this version of the importer. Please consider updating."
+
+#: admin-functions1/importer/wordpress-importer.php:457
+#: anps-framework/classes/importer/wordpress-importer.php:457
+#@ wordpress-importer
+msgid "Loading"
+msgstr "Loading"
+
+#: admin-functions1/importer/wordpress-importer.php:513
+#: anps-framework/classes/importer/wordpress-importer.php:513
+#@ wordpress-importer
+msgid "Import author:"
+msgstr "Import author:"
+
+#: admin-functions1/importer/wordpress-importer.php:535
+#: anps-framework/classes/importer/wordpress-importer.php:535
+#@ wordpress-importer
+msgid "or create new user with login name:"
+msgstr "or create new user with login name:"
+
+#: admin-functions1/importer/wordpress-importer.php:541
+#: anps-framework/classes/importer/wordpress-importer.php:541
+#@ wordpress-importer
+msgid "as a new user:"
+msgstr "as a new user:"
+
+#: admin-functions1/importer/wordpress-importer.php:557
+#: anps-framework/classes/importer/wordpress-importer.php:557
+#@ wordpress-importer
+msgid "assign posts to an existing user:"
+msgstr "assign posts to an existing user:"
+
+#: admin-functions1/importer/wordpress-importer.php:561
+#: anps-framework/classes/importer/wordpress-importer.php:561
+#@ wordpress-importer
+msgid "or assign posts to an existing user:"
+msgstr "or assign posts to an existing user:"
+
+#: admin-functions1/importer/wordpress-importer.php:563
+#: anps-framework/classes/importer/wordpress-importer.php:563
+#@ wordpress-importer
+msgid "- Select -"
+msgstr "- Select -"
+
+#: admin-functions1/importer/wordpress-importer.php:768
+#: anps-framework/classes/importer/wordpress-importer.php:768
+#, php-format
+#@ wordpress-importer
+msgid "Failed to import category %s"
+msgstr "Failed to import category %s"
+
+#: admin-functions1/importer/wordpress-importer.php:844
+#: anps-framework/classes/importer/wordpress-importer.php:844
+#, php-format
+#@ wordpress-importer
+msgid "Failed to import post tag %s"
+msgstr "Failed to import post tag %s"
+
+#: admin-functions1/importer/wordpress-importer.php:932
+#: admin-functions1/importer/wordpress-importer.php:1184
+#: anps-framework/classes/importer/wordpress-importer.php:932
+#: anps-framework/classes/importer/wordpress-importer.php:1184
+#, php-format
+#@ wordpress-importer
+msgid "Failed to import %s %s"
+msgstr "Failed to import %s %s"
+
+#: admin-functions1/importer/wordpress-importer.php:976
+#: anps-framework/classes/importer/wordpress-importer.php:976
+#, php-format
+#@ wordpress-importer
+msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+msgstr "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+
+#: admin-functions1/importer/wordpress-importer.php:1128
+#: anps-framework/classes/importer/wordpress-importer.php:1128
+#, php-format
+#@ wordpress-importer
+msgid "Failed to import %s &#8220;%s&#8221;"
+msgstr "Failed to import %s &#8220;%s&#8221;"
+
+#: admin-functions1/importer/wordpress-importer.php:1488
+#: anps-framework/classes/importer/wordpress-importer.php:1488
+#@ wordpress-importer
+msgid "Menu item skipped due to missing menu slug"
+msgstr "Menu item skipped due to missing menu slug"
+
+#: admin-functions1/importer/wordpress-importer.php:1502
+#: anps-framework/classes/importer/wordpress-importer.php:1502
+#, php-format
+#@ wordpress-importer
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr "Menu item skipped due to invalid menu slug: %s"
+
+#: admin-functions1/importer/wordpress-importer.php:1648
+#: anps-framework/classes/importer/wordpress-importer.php:1648
+#@ wordpress-importer
+msgid "Invalid file type"
+msgstr "Invalid file type"
+
+#: admin-functions1/importer/wordpress-importer.php:1736
+#: anps-framework/classes/importer/wordpress-importer.php:1736
+#@ wordpress-importer
+msgid "Remote server did not respond"
+msgstr "Remote server did not respond"
+
+#: admin-functions1/importer/wordpress-importer.php:1748
+#: anps-framework/classes/importer/wordpress-importer.php:1748
+#, php-format
+#@ wordpress-importer
+msgid "Remote server returned error response %1$d %2$s"
+msgstr "Remote server returned error response %1$d %2$s"
+
+#: admin-functions1/importer/wordpress-importer.php:1762
+#: anps-framework/classes/importer/wordpress-importer.php:1762
+#@ wordpress-importer
+msgid "Remote file is incorrect size"
+msgstr "Remote file is incorrect size"
+
+#: admin-functions1/importer/wordpress-importer.php:1772
+#: anps-framework/classes/importer/wordpress-importer.php:1772
+#@ wordpress-importer
+msgid "Zero size file downloaded"
+msgstr "Zero size file downloaded"
+
+#: admin-functions1/importer/wordpress-importer.php:1784
+#: anps-framework/classes/importer/wordpress-importer.php:1784
+#, php-format
+#@ wordpress-importer
+msgid "Remote file is too large, limit is %s"
+msgstr "Remote file is too large, limit is %s"
+
+#: admin-functions1/importer/wordpress-importer.php:1982
+#: anps-framework/classes/importer/wordpress-importer.php:1982
+#@ wordpress-importer
+msgid "Import WordPress"
+msgstr "Import WordPress"
+
+#: admin-functions1/importer/wordpress-importer.php:1996
+#: anps-framework/classes/importer/wordpress-importer.php:1996
+#, php-format
+#@ wordpress-importer
+msgid "A new version of this importer is available. Please update to version %s to ensure compatibility with newer export files."
+msgstr "A new version of this importer is available. Please update to version %s to ensure compatibility with newer export files."
+
+#: admin-functions1/importer/wordpress-importer.php:2026
+#: anps-framework/classes/importer/wordpress-importer.php:2026
+#@ wordpress-importer
+msgid "Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import the posts, pages, comments, custom fields, categories, and tags into this site."
+msgstr "Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import the posts, pages, comments, custom fields, categories, and tags into this site."
+
+#: admin-functions1/importer/wordpress-importer.php:2028
+#: anps-framework/classes/importer/wordpress-importer.php:2028
+#@ wordpress-importer
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr "Choose a WXR (.xml) file to upload, then click Upload file and import."
+
+#: includes/copyright_footer.php:14
+#@ azul
+msgid "socialise"
+msgstr "socialise"
+
+#: admin-functions1/class-tgm-plugin-activation.php:168
+#: admin-functions1/install_plugins.php:58
+#: anps-framework/class-tgm-plugin-activation.php:168
+#: anps-framework/install_plugins.php:58
+#, php-format
+#@ azul
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin-functions1/class-tgm-plugin-activation.php:169
+#: admin-functions1/install_plugins.php:59
+#: anps-framework/class-tgm-plugin-activation.php:169
+#: anps-framework/install_plugins.php:59
+#, php-format
+#@ azul
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin-functions1/class-tgm-plugin-activation.php:170
+#: admin-functions1/install_plugins.php:60
+#: anps-framework/class-tgm-plugin-activation.php:170
+#: anps-framework/install_plugins.php:60
+#, php-format
+#@ azul
+msgid "Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed."
+msgid_plural "Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin-functions1/class-tgm-plugin-activation.php:171
+#: admin-functions1/install_plugins.php:61
+#: anps-framework/class-tgm-plugin-activation.php:171
+#: anps-framework/install_plugins.php:61
+#, php-format
+#@ azul
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin-functions1/class-tgm-plugin-activation.php:172
+#: admin-functions1/install_plugins.php:62
+#: anps-framework/class-tgm-plugin-activation.php:172
+#: anps-framework/install_plugins.php:62
+#, php-format
+#@ azul
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin-functions1/class-tgm-plugin-activation.php:173
+#: admin-functions1/install_plugins.php:63
+#: anps-framework/class-tgm-plugin-activation.php:173
+#: anps-framework/install_plugins.php:63
+#, php-format
+#@ azul
+msgid "Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated."
+msgid_plural "Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin-functions1/class-tgm-plugin-activation.php:174
+#: admin-functions1/install_plugins.php:64
+#: anps-framework/class-tgm-plugin-activation.php:174
+#: anps-framework/install_plugins.php:64
+#, php-format
+#@ azul
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin-functions1/class-tgm-plugin-activation.php:175
+#: admin-functions1/install_plugins.php:65
+#: anps-framework/class-tgm-plugin-activation.php:175
+#: anps-framework/install_plugins.php:65
+#, php-format
+#@ azul
+msgid "Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated."
+msgid_plural "Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin-functions1/class-tgm-plugin-activation.php:176
+#: admin-functions1/install_plugins.php:66
+#: anps-framework/class-tgm-plugin-activation.php:176
+#: anps-framework/install_plugins.php:66
+#@ azul
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin-functions1/class-tgm-plugin-activation.php:177
+#: admin-functions1/install_plugins.php:67
+#: anps-framework/class-tgm-plugin-activation.php:177
+#: anps-framework/install_plugins.php:67
+#@ azul
+msgid "Activate installed plugin"
+msgid_plural "Activate installed plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin-functions1/importer/wordpress-importer.php:675
+#: anps-framework/classes/importer/wordpress-importer.php:675
+#@ wordpress-importer
+msgid "Dummy content is being installed, please be patient."
+msgstr ""
+
+#: anps-framework/helpers.php:8
+#@ azul
+msgid "Your logo goes here"
+msgstr ""
+
+#: anps-framework/helpers.php:41
+#@ azul
+msgid "Home"
+msgstr ""
+
+#: anps-framework/helpers.php:90
+#@ azul
+msgid "posted by"
+msgstr ""
+
+#: anps-framework/helpers.php:536
+#: attachment.php:26
+#, php-format
+#@ azul
+msgid "View all posts by %s"
+msgstr ""
+
+#: anps-framework/metaboxes.php:11
+#@ azul
+msgid "Side Content"
+msgstr ""
+
+#: anps-framework/widgets/AnpsImage.php:7
+#@ default
+msgid "Choose a image to show on page"
+msgstr ""
+
+#: anps-framework/widgets/AnpsQuotes.php:7
+#@ default
+msgid "Display a number of quotes from posts"
+msgstr ""
+
+#: anps-framework/widgets/AnpsTwitter.php:10
+#@ default
+msgid "Displays your Twitter feed"
+msgstr ""
+
+#: comments.php:47
+#@ azul
+msgid "Message"
+msgstr ""
+
+#: comments.php:49
+#: comments.php:50
+#@ azul
+msgid "Fields with * are required"
+msgstr ""
+
+#: content-portfolio.php:249
+#@ azul
+msgid "No Portfolio posts found!"
+msgstr ""
+
+#: header.php:109
+#@ azul
+msgid "Search"
+msgstr ""
+
+#: includes/pagination.php:11
+#@ default
+msgid "&#8592;"
+msgstr ""
+
+#: includes/pagination.php:12
+#@ default
+msgid "&#8594;"
+msgstr ""
+
+#: search.php:36
+#@ azul
+msgid "Nothing Found"
+msgstr ""
+
+#: search.php:38
+#@ azul
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr ""
+
+#: single.php:121
+#@ azul
+msgid "Project details"
+msgstr ""
+
+#: single.php:171
+#@ azul
+msgid "Related projects"
+msgstr ""
+

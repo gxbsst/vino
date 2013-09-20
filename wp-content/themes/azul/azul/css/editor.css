@@ -1,0 +1,45 @@
+html .mceContentBody * { 
+	font-family: Arial, Helvetica, sans-serif; 
+	color: #727272;
+	font-size: 14px;
+}
+
+html .mceContentBody img {
+	max-width: 100%;
+	height: auto;	
+}
+
+html img.mcewpmore {
+	width: 95%;
+	height: 12px
+}
+
+html .mceContentBody h1 {
+	font-size: 30px;
+}
+
+html .mceContentBody h2 {
+	font-size: 24px;
+}
+
+html .mceContentBody h3 {
+	font-size: 20px;
+}
+
+html .mceContentBody h1, html .mceContentBody h2, html .mceContentBody h3, html .mceContentBody h4, html .mceContentBody h5 {
+	border: 1px solid #ccc;
+	border-style: none none dashed none;
+	color: #000;
+	line-height: 1.3em;
+	padding-bottom: 7px;
+	text-transform: uppercase;
+}
+
+html .mceContentBody a {
+	color: #005691;
+	text-decoration: none;
+}
+
+html .mceContentBody a:hover {
+	color: #0084DF;
+}
