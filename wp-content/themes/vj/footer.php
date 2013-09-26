@@ -1,4 +1,5 @@
 </div>
+<?php  ?>
     <footer id="site-footer">
         <div id="footer-inner-wrapper">
 

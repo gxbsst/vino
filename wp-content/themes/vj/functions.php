@@ -8,6 +8,23 @@ add_theme_support('menus');
   //       'container'  => 'section-content',
   //       'footer'     => 'site-footer',
   //   ) );
+function create_widget ($name, $id, $description)
+{
+    $args = array(
+    'name'          => __( $name ),
+    'id'            => $id ,
+    'description'   => $description,
+        'class'         => '',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>' );
+
+     register_sidebar( $args );
+}
+
+create_widget("Right sidebar", 'right_sidebar', 'Desplay in right');
+
 
 if(!is_admin()) {
     include_once get_template_directory().'/anps-framework/classes/Options.php'; 

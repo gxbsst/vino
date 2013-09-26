@@ -1,3 +1,86 @@
 /***
 	Write your CSS structure here.
 ***/
+.clear {
+	clear: both;
+}
+.margin-bottom {
+	margin-bottom: 20px;
+}
+.article_list_widget {
+	list-style-type: none;
+	margin: 10px 0;
+}
+.article_list_widget li  {
+	/*overflow: auto;*/
+	/*height: 200px;*/
+	/*line-height: 300%;*/
+}
+.article_list_widget .img-outer {
+ display: block;
+ float: left;
+ margin-right: 10px;
+}
+.article_list_widget .text-outer {
+	float: left;
+}
+.article_list_widget h3 {
+	border-bottom: none;
+
+}
+
+
+body blockquote {
+
+font-family: Georgia, serif;
+font-size: 14px;
+font-style: italic;
+margin: 0.25em 0;
+padding: 0.35em 40px;
+line-height: 1.45;
+position: relative;
+color: #383838;
+}
+body blockquote .quotetex {
+	font-size: 1.5em;
+	/*background: #EEE;*/
+	height: 50px;
+	padding: 15px;
+}
+
+blockquote:before {
+display: block;
+padding-left: 00px;
+content: "\201C";
+font-size: 80px;
+position: absolute;
+left: 0;
+top: -20px;
+color: #7a7a7a;
+}
+
+ blockquote:after { 
+ 	content: "\201D"; 
+ 	color: #7a7a7a;
+ 	font-size: 80px;
+ 	position: absolute;
+ 	right: 10px;
+ 	top: -20px;
+}
+
+.row-fluid .span4  {
+	width: 48%;
+}
+.row-fluid .span3 {
+	width: 31%;
+}
+
+
+body .home-container h2{
+	margin: 30px 0 10px 0;
+}
+
+.ad {
+	margin: 20px 0 0 0;
+}
+

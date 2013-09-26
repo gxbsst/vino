@@ -82,7 +82,9 @@ function get_logo() {
     if (isset($media_data['logo']) && $media_data['logo'] != "") : ?>
         <a id="logo" href="<?php echo esc_url(home_url("/")); ?>"><img alt="Site logo"  src="<?php echo $media_data['logo']; ?>"></a>
     <?php else: ?>
-        <a id="logo" href="<?php echo esc_url(home_url("/")); ?>"><?php _e("Your logo goes here", "azul"); ?></a>        
+        <a id="logo" href="<?php echo esc_url(home_url("/")); ?>">
+            <img width="150px" src="<?php echo (get_template_directory_uri() . '/images/logo.png'); ?>" alt="">
+        </a>        
     <?php endif;
 }
 
@@ -250,7 +252,6 @@ function get_menu() {
     <nav id="site-nav" role="navigation">
         <?php
             $locations = get_theme_mod('nav_menu_locations');
-
             wp_nav_menu( array(
              'container' => false,
              'menu_class' => 'nav',
@@ -260,7 +261,7 @@ function get_menu() {
              'link_before' => '',
              'link_after' => '',
              'depth' => 0,
-             'walker' => new description_walker(),
+             // 'walker' => new description_walker(),
              'menu'=>$locations['primary']
              ));
         ?>
