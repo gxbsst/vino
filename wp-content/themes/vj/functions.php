@@ -1,5 +1,7 @@
 <?php 
 
+add_filter('show_admin_bar', '__return_false');
+
 add_theme_support('menus');
 
   // add_theme_support( 'infinite-scroll', array(
@@ -24,6 +26,9 @@ function create_widget ($name, $id, $description)
 }
 
 create_widget("Right sidebar", 'right_sidebar', 'Desplay in right');
+create_widget("Footer", 'footer_1', 'Desplay in Footer');
+
+
 
 
 if(!is_admin()) {

@@ -5,7 +5,7 @@
 	clear: both;
 }
 .margin-bottom {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 .article_list_widget {
 	list-style-type: none;
@@ -14,7 +14,7 @@
 .article_list_widget li  {
 	/*overflow: auto;*/
 	/*height: 200px;*/
-	/*line-height: 300%;*/
+	line-height: 120%;
 }
 .article_list_widget .img-outer {
  display: block;
@@ -44,28 +44,29 @@ color: #383838;
 body blockquote .quotetex {
 	font-size: 1.5em;
 	/*background: #EEE;*/
-	height: 50px;
+	height: 20px;
 	padding: 15px;
+	font-size: 1.2em;
 }
 
 blockquote:before {
 display: block;
 padding-left: 00px;
 content: "\201C";
-font-size: 80px;
+font-size: 60px;
 position: absolute;
-left: 0;
-top: -20px;
+left: 30px;
+top: -10px;
 color: #7a7a7a;
 }
 
  blockquote:after { 
  	content: "\201D"; 
  	color: #7a7a7a;
- 	font-size: 80px;
+ 	font-size: 60px;
  	position: absolute;
- 	right: 10px;
- 	top: -20px;
+ 	right: 30px;
+ 	top: -10px;
 }
 
 .row-fluid .span4  {
@@ -84,3 +85,25 @@ body .home-container h2{
 	margin: 20px 0 0 0;
 }
 
+#copyright-footer-wrapper {
+	text-align: center;
+}
+#copyright-footer #copyright-footer-left {
+	float: none;
+}
+#footer-inner-wrapper .menu li.menu-item {
+	display: inline;
+	/*float: left;*/
+}
+#footer-inner-wrapper .menu li .sub-menu {
+	margin-left: 10px;
+}
+#footer-inner-wrapper .menu li .sub-menu li {
+	margin 0 10px;
+}
+.span-data {
+	margin: 10px 0;
+}
+.span-data h3 {
+	font-size: 14px;
+}

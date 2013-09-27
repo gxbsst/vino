@@ -53,7 +53,6 @@
 			  <img src="<?php echo get_bloginfo('template_directory');?>/images/ad.png" alt="" />
 			</div>
 			
-
 			<h2>品酒心得</h2>
 			<?php 
 				$args = array(
@@ -70,7 +69,7 @@
 				<?php for ($i=0; $i < 3; $i++):?>
 				<li>
 					<a href="<?php the_permalink(); ?>"  class="img-outer">
-						<img src="<?php the_field('tasting_image'); ?>" width="200" >
+						<img src="<?php the_field('tasting_image'); ?>" width="150" >
 					</a>
 					<div class="text-outer" title="Rated 4 out of 5">
 						<h3>
@@ -120,7 +119,7 @@
 				<?php for ($i=0; $i < 3; $i++):?>
 				<li>
 					<a href="<?php the_permalink(); ?>"  class="img-outer">
-						<img src="<?php the_field('cover'); ?>" width="200" >
+						<img src="<?php the_field('cover'); ?>" width="150" >
 					</a>
 					<div class="text-outer" title="Rated 4 out of 5">
 						<h3>
@@ -147,12 +146,7 @@
 		</section>
 
 		<aside class="sidebar span3 clearfix">
-			<?php dynamic_sidebar($right_sidebar[0]); ?>
-			<ul style="margin: 0; padding: 0">
-				<?php if(dynamic_sidebar('right_sidebar')): ?>
-				<?php dynamic_sidebar('right_sidebar'); ?>
-				<?php endif; ?>
-			</ul>
+			<?php get_template_part( 'sidebar'); ?>
 		</aside> 
 
 	</div>

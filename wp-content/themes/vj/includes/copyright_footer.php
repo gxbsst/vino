@@ -10,7 +10,7 @@
                 ?>
         </div>
 
-        <div id="copyright-footer-right">
+     <!--    <div id="copyright-footer-right">
             <span><?php _e("socialise", "azul"); ?> - </span>
                         
                         <?php 
@@ -22,7 +22,7 @@
                             endforeach; 
                         endif;?>
         </div>  
-
+ -->
     </div>  
 </div>
 

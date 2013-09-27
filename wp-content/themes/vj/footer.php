@@ -4,8 +4,9 @@
         <div id="footer-inner-wrapper">
 
             <div class="container">
+                    <?php dynamic_sidebar('footer_1'); ?>
 
-                <?php get_sidebar( 'footer' ); ?>
+                <?php# get_sidebar( 'footer' ); ?>
 
             </div>
 
