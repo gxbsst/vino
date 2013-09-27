@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: home
+*/
+?>
 <?php get_header(); ?>
 
 <div id="site-content" class="container home-container" role="main">
