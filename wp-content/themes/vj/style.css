@@ -1298,7 +1298,7 @@ blockquote .quote-sub{color:#bebebe;display:block;font-size:17px;font-style:ital
 .comments .comment-reply-link{float:right;margin:10px 0 0 0;}
 .children .comment:before{content:url(images/icons/comment_child.png);position:absolute;top:0;right:auto;bottom:auto;left:-42px;}
 .comments-content{width:580px;}
-.comment.depth-2{margin-left:45px;}.comment.depth-2 .comments-content{width:508px;}
+.comment.depth-2{margin-left:45px;}.comment.depth-2 .comments-content{width:502px;}
 .comment.depth-3{margin-left:90px;}.comment.depth-3 .comments-content{width:435px;}
 .comment.depth-4{margin-left:135px;}.comment.depth-4 .comments-content{width:300px;}
 .span9 .comments-content{width:550px;}
@@ -1318,7 +1318,7 @@ section.span9,section.span6,section.span3,aside.span3{margin-top:20px;}
 .page aside.span3{width:25.804255319148934%;}
 .page section.span6{width:44.13617021276595%;}
 .page section.span9{width:72.06808510638297%;}
-@media (min-width:768px) and (max-width:979px){.page aside.span3{width:26.46948395%;} .page section.span6{width:41.53617021276595%;} .page section.span9{width:68.06808510638297%;}}@media (max-width:767px){.page aside.span3,.page section.span6,.page section.span9{width:100%;}}
+@media (min-width:768px) and (max-width:979px){.page aside.span3{width:26.46948395%;} .page section.span6{width:41.53617021276595%;} .page section.span9{width:68.06808510638297%;}}@media (max-width:767px){.page aside.span4,.page section.span6,.page section.span9{width:100%;}}
 .portfolio-single.row-fluid .span5.side-content-wrapper{margin:0;width:35%;}
 .portfolio-single.row-fluid .span7.main-content{margin:0;width:65%;}
 @media (max-width:767px){.portfolio-single.row-fluid .span5.side-content-wrapper,.portfolio-single.row-fluid .span7.main-content{width:100%;}}.portfolio-single.row-fluid .side-content{padding:25px;}

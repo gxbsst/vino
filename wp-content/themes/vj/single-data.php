@@ -3,10 +3,10 @@
 	<div class="row-fluid page">
 		<section id="section-content" class="clearfix span8">
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                  <img src="<?php the_field('cover'); ?>" >
-          <?php the_title(); ?><br/>
-          <?php the_content();?><br />
-          <?php the_excerpt();?>
+           <h2><?php the_title(); ?></h2>
+           <p><img src="<?php the_field('cover'); ?>" ></p>
+           <?php the_excerpt();?>
+            <?php the_content();?>
           <a href="<?php echo the_field('data'); ?>"> 下载</a>
       <?php endwhile; else: ?>
           <p>Sorry, no posts matched your criteria.</p>

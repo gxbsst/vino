@@ -586,6 +586,6 @@ switch(get_option('font_source_2')) {
     }
     
     .comments article.comment {
-        border: 1px solid #CCC;
+        border: 1px solid #e5e5e5;
         background-color: #FFF;
     }
