@@ -589,7 +589,3 @@ switch(get_option('font_source_2')) {
         border: 1px solid #CCC;
         background-color: #FFF;
     }
-
-    .tab-content {
-     border: 1px solid #CCC;
-}

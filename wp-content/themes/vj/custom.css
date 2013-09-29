@@ -30,6 +30,9 @@
 	margin-top: 0;
 	margin-bottom: 0;
 }
+.article_list_widget h3 > a {
+	color: #444;
+}
  .article_list_widget .text-outer .author{
 	/*position: absolute;
 	right: -70px;
@@ -47,7 +50,7 @@ margin: 0.25em 0;
 padding: 0.35em 40px;
 line-height: 1.45;
 position: relative;
-color: #383838;
+color: #444;
 }
 body blockquote .quotetex {
 	font-size: 1.5em;
@@ -88,13 +91,19 @@ color: #7a7a7a;
 body .home-container h2{
 	margin: 30px 0 10px 0;
 	position: relative;
+	color: #d33502;
 }
-body .home-container h2 span {
+body .home-container h2 span.more {
 	font-weight: normal;
 	position: absolute;
 	right: 0;
 	font-size: 14px;
+	
 }
+body .home-container h2 span.more a {
+	color: #41a30d;
+}
+
 
 .ad {
 	margin: 20px 0 0 0;
@@ -134,6 +143,9 @@ body .home-container h2 span {
 	padding: 10px 5px;
 }
 
+.tab-content {
+	border: 1px solid #e5e5e5;
+}
 .tab-content  ul li {
 	list-style-type: square;
 	line-height: 250%;
@@ -144,10 +156,35 @@ body {
 	font-size: 14px;
 }
 
+.sidebar >  ul.nav-tabs
+{
+	margin-top: 20px;
+}
+
 .sidebar>li, .sidebar ul>li {
 	list-style-type: square;
 	list-style-position: inside;
 }
+.sidebar .nav-tabs>li {
+	list-style-type: none;
+}
 #site-nav a {
 	font-size: 16px;
 }
+.wpp-list {
+	margin-left: 10px;
+}
+
+ .sidebar .list {
+	margin-left: 17px;
+}
+
+#recentcomments 
+{
+	padding-left: 17px;
+	border: 1px solid #e5e5e5;
+}
+#site-wrapper #menu-main > .current-menu-item > a {
+	background: #d33502;
+}
+

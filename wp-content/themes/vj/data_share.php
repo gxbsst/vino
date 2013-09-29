@@ -24,7 +24,7 @@ var_dump($page);
 
 <div id="site-content" class="container data-container" role="main">
 	<div class="row-fluid page">
-		<section id="section-content" class="clearfix span9">
+		<section id="section-content" class="clearfix span8">
 			<h2>资料分享</h2>
 			<?php 
 				$args = array(
@@ -76,7 +76,7 @@ var_dump($page);
 
     <!-- end section-content -->
 		</section>
-		<aside class="sidebar span3 clearfix">
+		<aside class="sidebar span4 clearfix">
 			<?php get_template_part( 'sidebar'); ?>
 		</aside> 
    <!-- end row-fluid -->

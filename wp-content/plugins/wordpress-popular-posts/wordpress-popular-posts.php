@@ -64,7 +64,7 @@ if ( !class_exists('WordpressPopularPosts') ) {
 			),
 			'rating' => false,
 			'stats_tag' => array(
-				'comment_count' => true,
+				'comment_count' => false,
 				'views' => false,
 				'author' => false,
 				'date' => array(
@@ -1147,10 +1147,11 @@ if ( !class_exists('WordpressPopularPosts') ) {
 					// STATS
 					// comments
 					if ( $instance['stats_tag']['comment_count'] ) {
-						$comments_text =sprintf(
-						_n('1 comment', '%s comments', $comments, 'wordpress-popular-posts'),
-						number_format_i18n($comments));
-						$stats .= "<span class=\"wpp-comments\">" . $comments_text . "</span>";
+						// WESTON 如果要显示评论数量
+						// $comments_text =sprintf(
+						// _n('1 comment', '%s comments', $comments, 'wordpress-popular-posts'),
+						// number_format_i18n($comments));
+						// $stats .= "<span class=\"wpp-comments\">" . $comments_text . "</span>";
 					} else {
 					}
 					// views

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div id="site-content" class="container home-container" role="main">
   <div class="row-fluid page">
-    <section id="section-content" class="clearfix span9">
+    <section id="section-content" class="clearfix span8">
       <?php $cat = get_the_category( ); ?>
       <h2><?php echo $cat[0]->cat_name; ?></h2>
 			<?php 
@@ -68,7 +68,7 @@
 				NO.....
 			<?php endif; ?>
     </section>
-    <aside class="sidebar span3 clearfix">
+    <aside class="sidebar span4 clearfix">
       <?php get_template_part( 'sidebar'); ?>
     </aside> 
   </div>
