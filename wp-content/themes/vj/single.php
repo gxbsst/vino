@@ -4,7 +4,7 @@
 		<section id="section-content" class="clearfix span8">
 		<?php while ( have_posts() ) : the_post(); ?>
 		<h2><?php the_title(); ?></h2>
-		<?php the_content( $more_link_text = null, $stripteaser = false )(); ?>
+		<?php the_content(); ?>
 
 		<?php comments_template('', true); ?>
 		
