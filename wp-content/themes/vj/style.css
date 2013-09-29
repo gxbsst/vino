@@ -1297,8 +1297,8 @@ blockquote .quote-sub{color:#bebebe;display:block;font-size:17px;font-style:ital
 .comments .avatar-wrapper{margin:0 30px 0 0;}
 .comments .comment-reply-link{float:right;margin:10px 0 0 0;}
 .children .comment:before{content:url(images/icons/comment_child.png);position:absolute;top:0;right:auto;bottom:auto;left:-42px;}
-.comments-content{width:822px;}
-.comment.depth-2{margin-left:45px;}.comment.depth-2 .comments-content{width:752px;}
+.comments-content{width:580px;}
+.comment.depth-2{margin-left:45px;}.comment.depth-2 .comments-content{width:502px;}
 .comment.depth-3{margin-left:90px;}.comment.depth-3 .comments-content{width:682px;}
 .comment.depth-4{margin-left:135px;}.comment.depth-4 .comments-content{width:612px;}
 .span9 .comments-content{width:550px;}

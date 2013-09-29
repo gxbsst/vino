@@ -42,7 +42,7 @@ if ( !class_exists('WordpressPopularPosts') ) {
 			'limit' => 10,
 			'range' => 'daily',
 			'order_by' => 'views',
-			'post_type' => 'post,page',
+			'post_type' => 'post,page,video,tasting,bar',
 			'pid' => '',
 			'author' => '',
 			'cat' => '',

@@ -7,63 +7,66 @@ Template Name: home
 
 <div id="site-content" class="container home-container" role="main">
 	<div class="row-fluid page">
-		<section id="section-content" class="clearfix span9">
+		<section id="section-content" class="clearfix span8">
 			<?php putRevSlider("defalt","homepage") ?>
+			<!--
 			<h2 class="title">每周推荐</h2>
 			
 			<?php 
 				$args = array(
-					'category_name' => 'recommendation',
-					'posts_per_page' => 4,
-					'orderby' => 'rand'
+					#'category_name' => 'recommendation',
+          'post_type' => array('tasting', 'bar'),
+					'posts_per_page' => 2,
+					'orderby' => 'date'
 					);
 				$the_query = new WP_Query($args);
 			?>
+
+    <div class="row">
 			<?php 
 				if (have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); 
 			?>
-			<div class="row-fluid">
-				<?php for ($i=0; $i < 3; $i++):?>
-				<article class="span3 single-post2" style="height: 192px;">
-					<?php if (has_post_thumbnail( $post->ID )) : ?>
-					<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-					<img src="<?php echo $image[0]; ?>" />
-					<?php endif; ?>
+        <div class="span4">
+            <article class="person">
+                <header>
+                <?php# if (has_post_thumbnail( $post->ID )) : ?>
+                <?php# $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+                <a href="<?php the_permalink(); ?> ">
+                <?php if("bar" == get_post_type()):  ?>
+                         <img src="<?php the_field('cover'); ?>" />
+                <?php elseif('tasting' == get_post_type()): ?>
+                         <img src="<?php the_field('tasting_image'); ?>" />
+                <?php endif;?>
+                </a>
+                <?php# endif; ?>
+                </header>
+                <h3><?php the_author(); ?> /
+                    <em><?php echo get_the_title(); ?></em>
+                </h3>
+                 <?php the_excerpt(); ?>
+            </article>
+        </div>
 
-					<div class="single-post2-content" style="top: 151px; height: 168px;">
-						<h4>
-							<a href="<?php the_permalink(); ?> ">
-								<?php echo get_the_title(); ?> 
-							</a>
-						</h4>
-						<p><?php echo get_the_excerpt(); ?></p>
-						<span class="single-post2-more">
-							<a class="single-post2-open" href="<?php the_permalink(); ?>"></a>
-						</span>
-					</div>
-				</article>
-			<?php endfor; ?>
-			</div>
-			
-			<div class="clear"></div>
-			
 			<?php
 			  endwhile; else: 
 			?>
 				NO.....
 			<?php endif; ?>
 
+    </div>
+			<div class="clear"></div>
 			
 			<div class="ad">
 			  <img src="<?php echo get_bloginfo('template_directory');?>/images/ad.png" alt="" />
 			</div>
-			
-			<h2>品酒心得</h2>
+		-->
+			<?php $page = get_page( TASTINT_PAGE_ID ); ?>
+			<h2><?php echo $page->post_title; ?> <span class="more"> <a href="<?php echo get_permalink( $page->ID ); ?>">MORE >></a> </span></h2>
 			<?php 
 				$args = array(
 					'post_type' => 'tasting',
 					'posts_per_page' => 3,
-					'orderby' => 'rand'
+					'orderby' => 'date'
 					);
 				$the_query = new WP_Query($args);
 			?>
@@ -82,8 +85,9 @@ Template Name: home
 								<?php echo get_the_title(); ?> 
 							</a>
 						</h4>
-						<p><?php echo get_the_author(); ?>(<?php the_field('tasting_date');?>)</p>
-						<p><?php the_field('tasting_address'); ?></p>
+						
+						<p class="author">By <?php echo get_the_author(); ?>(<?php the_field('tasting_date');?>)</p>
+						<p class="address"><?php the_field('tasting_address'); ?></p>
 						<blockquote>
 							<p class="quotetex">
 							
@@ -107,13 +111,14 @@ Template Name: home
 
 			
 
-			<h2>酒吧</h2>
+			<?php $page = get_page( BAR_PAGE_ID ); ?>
+			<h2><?php echo $page->post_title; ?> <span class="more"> <a href="<?php echo get_permalink( $page->ID ); ?>">MORE >></a> </span></h2>
 
 			<?php 
 				$args = array(
 					'post_type' => 'bar',
 					'posts_per_page' => 3,
-					'orderby' => 'rand'
+					'orderby' => 'date'
 					);
 				$the_query = new WP_Query($args);
 			?>
@@ -150,7 +155,7 @@ Template Name: home
 			<?php endif; ?>
 		</section>
 
-		<aside class="sidebar span3 clearfix">
+		<aside class="sidebar span4">
 			<?php get_template_part( 'sidebar'); ?>
 		</aside> 
 

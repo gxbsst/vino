@@ -297,7 +297,7 @@ switch(get_option('font_source_2')) {
     .accordion-group,
     .nav-tabs .active a,
     .nav-tabs .active a:hover,
-    .tab-content .tab-pane,
+    
     .progress-bar,
     .quotebox,
     .person p,
@@ -575,3 +575,21 @@ switch(get_option('font_source_2')) {
         background: <?php echo $primary_color; ?>;
         color: #fff;
     }
+
+
+
+
+     #custome 
+
+    .comment .comments-content {
+        width: 580px;
+    }
+    
+    .comments article.comment {
+        border: 1px solid #CCC;
+        background-color: #FFF;
+    }
+
+    .tab-content {
+     border: 1px solid #CCC;
+}

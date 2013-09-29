@@ -1,5 +1,9 @@
 <?php 
 
+define('TASTINT_PAGE_ID', 201); 
+define('BAR_PAGE_ID', 155); 
+define('HOME_PAGE_ID', 161); 
+
 add_filter('show_admin_bar', '__return_false');
 
 add_theme_support('menus');
