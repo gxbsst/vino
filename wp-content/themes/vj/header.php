@@ -29,6 +29,7 @@
 	<div id="site-inner-wrapper">
 
       <header id="site-header" class="container">
+      	
 
         <?php get_logo_and_search(); ?>
 		

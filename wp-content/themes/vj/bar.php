@@ -6,14 +6,16 @@ Template Name: Home Bar
 
 <?php get_header(); ?>
 
+
 <div id="site-content" class="container home-container" role="main">
 	<div class="row-fluid page">
 		<section id="section-content" class="clearfix span8">
-			<h2>酒吧</h2>
+			<?php $page = get_page(); ?>
+			<h2><?php echo get_the_title($page); ?></h2>
 			<?php 
 				$args = array(
 					'post_type' => 'bar',
-					'posts_per_page' => 3,
+					'posts_per_page' => 12,
 					'orderby' => 'rand'
 					);
 				$the_query = new WP_Query($args);
@@ -23,7 +25,7 @@ Template Name: Home Bar
         $counter = 0;
         $first = true;
 
-				if (have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); 
+		if (have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); 
 			?>
       <?php get_template_part( 'content-bar', get_post_format() ); ?>
       <?php
@@ -31,7 +33,7 @@ Template Name: Home Bar
 
       if ($the_query->found_posts == 0) {
           if ($counter == 0) {
-            echo "have no post.....";
+            echo "暂时没有文章。";
           }
       } else {
 
@@ -51,7 +53,7 @@ Template Name: Home Bar
 			<?php
 			  endwhile; else: 
 			?>
-				NO.....
+				暂时没有文章。
 			<?php endif; ?>
     <!-- end section-content -->
 		</section>

@@ -20,7 +20,7 @@
 .article_list_widget .img-outer {
  display: block;
  float: left;
- margin-right: 10px;
+ margin-right: 20px;
 }
 .article_list_widget .text-outer {
 	float: left;
@@ -189,3 +189,39 @@ body {
 	background: #d33502;
 }
 
+footer .container {
+	padding: 10px 0;
+}
+footer .container input[type="email"] {
+	border: 0;
+	border-radius: 0;
+	padding: 10px 5;
+	height: 40px;
+}
+footer .container input[type="submit"] {
+	border: 0;
+	border-radius: 0;
+	padding: 10px 5;
+	height: 40px;
+	background: #d33502;
+}
+footer .span4 {
+	width: 292px;
+}
+footer .span4.wx  {
+	text-align: center;
+}
+footer .span4 h4 {
+	color: #FFF;
+}
+footer .span4.menu ul li  {
+	margin: 10px 0 0 15px;
+}
+#copyright-footer-left a {
+	color: #d3d3d3;
+}
+
+.single-content p{
+	line-height: 200%;
+	margin: 20px 0;
+}

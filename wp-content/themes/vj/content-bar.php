@@ -26,7 +26,6 @@
          <article id="post-<?php the_ID(); ?>" <?php post_class("clearfix " . $blog_post_class); ?>>
             <?php $check_if_text_only = true; ?>
             <ul class="article_list_widget ">
-              <?php for ($i=0; $i < 3; $i++):?>
               <li>
                 <a href="<?php the_permalink(); ?>"  class="img-outer">
                   <img src="<?php the_field('cover'); ?>" width="150" >
@@ -54,7 +53,6 @@
 
                 <div class="margin-bottom clear"></div>
               </li>
-            <?php endfor; ?>
             </ul>
             <div class="clear"></div>
             

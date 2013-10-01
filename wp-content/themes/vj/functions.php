@@ -4,6 +4,18 @@ define('TASTINT_PAGE_ID', 201);
 define('BAR_PAGE_ID', 155); 
 define('HOME_PAGE_ID', 161); 
 
+
+// 自定义评论时间
+function custom_themify_comment_date($date_fmt) {
+    return 'Y年m月d日';
+};
+function custom_themify_comment_time($date_fmt) {
+    return 'g:i a';
+};
+add_filter('themify_comment_date', 'custom_themify_comment_date');
+add_filter('themify_comment_time', 'custom_themify_comment_time');
+
+
 add_filter('show_admin_bar', '__return_false');
 
 add_theme_support('menus');
@@ -29,8 +41,9 @@ function create_widget ($name, $id, $description)
      register_sidebar( $args );
 }
 
-create_widget("Right sidebar", 'right_sidebar', 'Desplay in right');
+create_widget("Right sidebar", 'right_sidebar', '显示订阅信息');
 create_widget("Footer", 'footer_1', 'Desplay in Footer');
+create_widget("Footer 2", 'footer_2', '显示菜单');
 
 
 

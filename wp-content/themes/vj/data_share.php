@@ -25,7 +25,8 @@ var_dump($page);
 <div id="site-content" class="container data-container" role="main">
 	<div class="row-fluid page">
 		<section id="section-content" class="clearfix span8">
-			<h2>资料分享</h2>
+			<?php $page = get_page(); ?>
+      <h2><?php echo get_the_title($page); ?></h2>
 			<?php 
 				$args = array(
 					'post_type' => 'data',
@@ -43,7 +44,6 @@ var_dump($page);
         $first = true;
         if (have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); 
         ?>
-        <?php for ($i=0; $i < 12; $i++):?>
           <article class="span3 single-post2" style="height: 200px;">
             <img src="<?php the_field('img');?>" width="150" / >
           <div class="single-post2-content" style="top: 151px; height: 168px;">
@@ -59,13 +59,12 @@ var_dump($page);
             </span>
           </div>
         </article>
-        <? endfor;?>
         <?php wp_reset_query(); ?>
 
         <?php
           endwhile; else: 
         ?>
-          NO.....
+        暂时没有文章。
         <?php endif; ?>
       </div>
 

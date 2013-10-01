@@ -4,7 +4,18 @@
         <div id="footer-inner-wrapper">
 
             <div class="container">
-                    <?php dynamic_sidebar('footer_1'); ?>
+                    <div class="span4">
+                        <h4>订阅饮酒志</h4>
+                        <?php dynamic_sidebar('footer_1'); ?>
+                    </div>
+                    <div class="span4 wx">
+                        <h4>关注饮酒志的微信</h4>
+                        <p><img src="/images/wx.jpg" alt="扫瞄我们 微信" width="130" height="130"/></p>
+                    </div>
+
+                    <div class="span4 menu">
+                         <?php dynamic_sidebar('footer_2'); ?>
+                    </div>
 
                 <?php# get_sidebar( 'footer' ); ?>
 
@@ -20,6 +31,7 @@
     if ($options_data['copyright_on'] == 'on')
         get_template_part("includes/copyright_footer");
     ?>
+   
     <!-- END Copyright footer -->
     
 </div>

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div id="site-content" class="container home-container" role="main">
 	<div class="row-fluid page">
-		<section id="section-content" class="clearfix span8">
+		<section id="section-content" class="clearfix span8 single-content">
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
       <h2>

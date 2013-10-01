@@ -1,7 +1,7 @@
 
 <?php dynamic_sidebar($right_sidebar[0]); ?>
 	
-	<iframe width="100%" height="380" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=zh_cn&width=0&height=380&fansRow=2&ptype=1&speed=0&skin=5&isTitle=0&noborder=1&isWeibo=1&isFans=0&uid=1644963913&verifier=39b7a8cb&dpc=1"></iframe>
+	<iframe width="100%" height="300" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=500&fansRow=1&ptype=1&speed=0&skin=5&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=3120042550&verifier=8bf1e8fa&dpc=1"></iframe>
 
 	<ul class="nav nav-tabs">
 		<li class="active"><a href="#tab-0-1" data-toggle="tab">周排行</a></li>

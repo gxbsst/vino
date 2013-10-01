@@ -2,12 +2,8 @@
     <div id="copyright-footer-wrapper" class="container">   
 
         <div id="copyright-footer-left"> 
-                <?php 
-                    global $options_data; 
-                    global $social_data; 
-                    unset($social_data['email'], $social_data['google_analytics']);               
-                    echo $options_data['copyright']; 
-                ?>
+                
+                Copyright &copy; 2013 <a href="http://vinojournal.com">vinojournal.com</a> | All Rights Reserved  沪ICP备13026731号-1
         </div>
 
      <!--    <div id="copyright-footer-right">

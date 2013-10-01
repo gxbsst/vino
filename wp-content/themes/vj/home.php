@@ -16,7 +16,7 @@ Template Name: home
 				$args = array(
 					#'category_name' => 'recommendation',
           'post_type' => array('tasting', 'bar'),
-					'posts_per_page' => 2,
+					'posts_per_page' => 4,
 					'orderby' => 'date'
 					);
 				$the_query = new WP_Query($args);
@@ -65,16 +65,17 @@ Template Name: home
 			<?php 
 				$args = array(
 					'post_type' => 'tasting',
-					'posts_per_page' => 3,
+					'posts_per_page' => 4,
 					'orderby' => 'date'
 					);
 				$the_query = new WP_Query($args);
 			?>
-			<?php 
-				if (have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); 
-			?>
+			
 			<ul class="article_list_widget ">
-				<?php for ($i=0; $i < 3; $i++):?>
+				<?php 
+					if (have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); 
+				?>
+
 				<li>
 					<a href="<?php the_permalink(); ?>"  class="img-outer">
 						<img src="<?php the_field('tasting_image'); ?>" width="150" >
@@ -98,18 +99,13 @@ Template Name: home
 					</div>
 					<div class="margin-bottom clear"></div>
 				</li>
-			<?php endfor; ?>
+				<?php
+				  endwhile; else: 
+				?>
+					<li>暂无文章</li>
+				<?php endif; ?>
 			</ul>
 			<div class="clear"></div>
-			
-			<?php
-			  endwhile; else: 
-			?>
-				NO.....
-			<?php endif; ?>
-
-
-			
 
 			<?php $page = get_page( BAR_PAGE_ID ); ?>
 			<h2><?php echo $page->post_title; ?> <span class="more"> <a href="<?php echo get_permalink( $page->ID ); ?>">MORE >></a> </span></h2>
@@ -117,16 +113,16 @@ Template Name: home
 			<?php 
 				$args = array(
 					'post_type' => 'bar',
-					'posts_per_page' => 3,
+					'posts_per_page' => 4,
 					'orderby' => 'date'
 					);
 				$the_query = new WP_Query($args);
 			?>
-			<?php 
-				if (have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); 
-			?>
+			
 			<ul class="article_list_widget ">
-				<?php for ($i=0; $i < 3; $i++):?>
+				<?php 
+					if (have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); 
+				?>
 				<li>
 					<a href="<?php the_permalink(); ?>"  class="img-outer">
 						<img src="<?php the_field('cover'); ?>" width="150" >
@@ -144,15 +140,15 @@ Template Name: home
 					</div>
 					<div class="margin-bottom clear"></div>
 				</li>
-			<?php endfor; ?>
+				<?php
+				  endwhile; else: 
+				?>
+					<li>暂无文章</li>
+				<?php endif; ?>
 			</ul>
 			<div class="clear"></div>
 			
-			<?php
-			  endwhile; else: 
-			?>
-				NO.....
-			<?php endif; ?>
+		
 		</section>
 
 		<aside class="sidebar span4">

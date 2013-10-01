@@ -9,7 +9,8 @@ Template Name: Home Tasting
 <div id="site-content" class="container home-container" role="main">
 	<div class="row-fluid page">
 		<section id="section-content" class="clearfix span8">
-			<h2>酒吧</h2>
+			<?php $page = get_page(); ?>
+			<h2><?php echo get_the_title($page); ?></h2>
 			<?php 
 				$args = array(
 					'post_type' => 'tasting',

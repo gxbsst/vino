@@ -925,14 +925,14 @@ function anps_comment($comment, $args, $depth) {
             </header>
 
             <div class="comment-meta">
-                <?php echo get_comment_date("M"); ?> <?php echo get_comment_date("d"); ?>, <?php echo strtolower(get_comment_date("Y")); ?>
+                <?php echo  get_comment_date("Y年m月d日");?>
             </div>
 
             <div class="avatar-wrapper"><?php echo get_avatar($comment, $size = '48'); ?></div>
             
             <div class="comments-content clearfix">
                 <?php comment_text() ?>
-                <?php echo comment_reply_link(array_merge(array('reply_text' => 'Reply'), array('depth' => $depth, 'max_depth' => $args['max_depth']))); ?>
+                <?php echo comment_reply_link(array_merge(array('reply_text' => '回复'), array('depth' => $depth, 'max_depth' => $args['max_depth']))); ?>
             </div>
         </article>
     </div>

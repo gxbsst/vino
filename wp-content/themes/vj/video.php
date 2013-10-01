@@ -9,7 +9,8 @@ Template Name: Home Video
 <div id="site-content" class="container home-container" role="main">
 	<div class="row-fluid page">
 		<section id="section-content" class="clearfix span8">
-			<h2>视频</h2>
+			<?php $page = get_page(); ?>
+			<h2><?php echo get_the_title($page); ?></h2>
 			<?php 
 				$args = array(
 					'post_type' => 'video',
@@ -40,7 +41,7 @@ Template Name: Home Video
 			<?php
 			  endwhile; else: 
 			?>
-				NO.....
+				暂时没有文章。
 			<?php endif; ?>
     <!-- end section-content -->
 		</section>
