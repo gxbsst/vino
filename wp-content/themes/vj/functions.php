@@ -1,5 +1,24 @@
 <?php 
 
+
+function custome_jiathis($content, $post_id, $field) {
+        $jiathis_code = get_option('jiathis_code');
+        $jiathis_dir = 'float:'.get_option('jiathis_dir');
+        $jiathis_clear = '<div style="clear:both; margin-top:5px; margin-bottom:5px;"></div>';
+        if(is_single() || is_page() && get_option('jiathis_feed') == 'yes') {
+            if(get_option('jiathis_pos') == 'down') {
+                $content = $content.$jiathis_clear."<div style=\"".$jiathis_dir."\">".$jiathis_code.'</div>'.$jiathis_clear;
+            } else if(get_option('jiathis_pos') == 'up') {
+                $content = $jiathis_clear."<div style=\"".$jiathis_dir."\">".$jiathis_code.'</div>'.$jiathis_clear.$content;
+            }
+        }
+        // echo ($jiathis_code);
+        return $content ;
+}
+
+add_filter('acf/load_value/name=description',  'custome_jiathis', 10, 3);
+add_filter('acf/load_value/name=video',  'custome_jiathis', 10, 3);
+
 define('TASTINT_PAGE_ID', 201); 
 define('BAR_PAGE_ID', 155); 
 define('HOME_PAGE_ID', 161); 
