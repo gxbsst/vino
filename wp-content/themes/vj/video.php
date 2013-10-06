@@ -15,7 +15,7 @@ Template Name: Home Video
 				$args = array(
 					'post_type' => 'video',
 					'posts_per_page' => 6,
-					'orderby' => 'rand'
+					'orderby' => 'date'
 					);
 				$the_query = new WP_Query($args);
 			?>
