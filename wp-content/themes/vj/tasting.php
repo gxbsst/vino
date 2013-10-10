@@ -15,7 +15,7 @@ Template Name: Home Tasting
 				$args = array(
 					'post_type' => 'tasting',
 					'posts_per_page' => 3,
-					'orderby' => 'rand'
+					'orderby' => 'date'
 					);
 				$the_query = new WP_Query($args);
 			?>

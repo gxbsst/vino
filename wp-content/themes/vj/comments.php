@@ -45,13 +45,13 @@ if(!isset($fields))
     ); 
     $defaults = array(
     'fields'               => apply_filters( 'comment_form_default_fields', $fields ),
-    'comment_field'        => '<p class="comment-form-comment"><div class="wrap-area"><textarea placeholder="' . __("Message", "azul") . '*" class="required" name="comment" title="message" cols="45" rows="8" aria-required="true"></textarea></div></p>',
+    'comment_field'        => '<p class="comment-form-comment"><div class="wrap-area"><textarea placeholder="' . '评论内容' . '*" class="required" name="comment" title="message" cols="45" rows="8" aria-required="true"></textarea></div></p>',
     'must_log_in'          => '<p class="must-log-in">You must be logged in to leave a reply.</p>',
     'logged_in_as'         => '<h4 id="comment-header" class="clearfix">' . '评论' . '</h4><span class="comment-sub">' . '</span><div id="comment-form">',
     'comment_notes_before' => '<h4 id="comment-header" class="clearfix">' . '评论' . '</h4><span class="comment-sub">'  . '</span><div id="comment-form">',
     'title_reply' => '',
     'comment_notes_after'  => '<div class="clear"></div><div class="form-buttons">
-                        <button class="btn form-button" name="reset">重置</button>
+                        <button class="btn form-button" name="reset">取消</button>
                         <button class="btn form-button" name="send-comment">确认</button>
                     </div></div>',
     'id_form'              => 'commentform',

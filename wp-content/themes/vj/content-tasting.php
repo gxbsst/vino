@@ -29,7 +29,11 @@
             
 				<li>
 					<a href="<?php the_permalink(); ?>"  class="img-outer">
-						<img src="<?php the_field('tasting_image'); ?>" width="150" >
+                        <?php if(!(get_field('tasting_image'))): ?>
+                            <img src="/images/no-pic.jpg"  width="150" height="124"/>
+                        <?php else: ?>
+                        <img src="<?php the_field('tasting_image'); ?>" width="150" >
+                        <?php endif; ?>
 					</a>
 					<div class="text-outer" title="Rated 4 out of 5">
 						<h3>
@@ -37,13 +41,11 @@
 								<?php echo get_the_title(); ?> 
 							</a>
 						</h4>
-						<p><?php echo get_the_author(); ?>(<?php the_field('tasting_date');?>)</p>
-						<p><?php the_field('tasting_address'); ?></p>
+                        <p class="author">作者: <?php echo get_the_author(); ?><?php // the_field('tasting_date');?></p>
+                        <p class="address"><?php the_field('tasting_address'); ?></p>
 						<blockquote>
 							<p class="quotetex">
-							
-							<?php echo get_the_excerpt(); ?>
-							
+							<?php echo wp_trim_words( get_the_excerpt(), $num_words = 48, $more = null ); ?>							
 						</p>
 					</blockquote>
 					</div>

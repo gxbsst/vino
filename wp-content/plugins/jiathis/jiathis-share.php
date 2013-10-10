@@ -76,7 +76,7 @@ function widget_sidebar_jiathis() {
 	    echo htmlspecialchars_decode(get_option("jiathis_code")) . '</div>';
         echo $after_widget;
     }
-    register_sidebar_widget(__('JiaThis分享工具', 'jiathis'), 'widget_jiathis');
+    wp_register_sidebar_widget('jiathis', __('JiaThis分享工具', 'jiathis'), 'widget_jiathis');
 }
 
 add_action('admin_menu', 'jiathis_menu');

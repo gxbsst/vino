@@ -25,6 +25,7 @@
 .article_list_widget .text-outer {
 	float: left;
 	position: relative;
+	width: 70%;
 }
 .article_list_widget h3 {
 	border-bottom: none;
@@ -54,11 +55,10 @@ position: relative;
 color: #444;
 }
 body blockquote .quotetex {
-	font-size: 1.5em;
 	/*background: #EEE;*/
 	height: 20px;
 	padding: 15px;
-	font-size: 1.2em;
+	font-size: 0.9em;
 }
 
 blockquote:before {

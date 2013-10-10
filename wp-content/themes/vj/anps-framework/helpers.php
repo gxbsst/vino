@@ -186,7 +186,7 @@ function tagsAndAuthor() {
     ?>
 
         <div class="tags-author">
-    <?php echo __('posted by', 'azul'); ?> <?php echo get_the_author(); ?>
+        作者: <?php echo get_the_author(); ?>
 
     <?php
     $posttags = get_the_tags();
@@ -848,7 +848,7 @@ if (!function_exists('anps_setup')):
                     1=>array('label'=>'subject', 'input_type'=>'text', 'is_required'=>'on', 'placeholder'=>'subject', 'validation'=>'none'),
                     2=>array('label'=>'contact number', 'input_type'=>'text', 'is_required'=>'', 'placeholder'=>'contact number', 'validation'=>'phone'),
                     3=>array('label'=>'lorem ipsum', 'input_type'=>'text', 'is_required'=>'', 'placeholder'=>'lorem ipsum', 'validation'=>'none'),
-                    4=>array('label'=>'message', 'input_type'=>'textarea', 'is_required'=>'on', 'placeholder'=>'message', 'validation'=>'none'),
+                    4=>array('label'=>'message', 'input_type'=>'textarea', 'is_required'=>'on', 'placeholder'=>'评论内容', 'validation'=>'none'),
                 );
             update_option('anps_contact', $arr);
         } 

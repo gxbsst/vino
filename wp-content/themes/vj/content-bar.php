@@ -28,7 +28,11 @@
             <ul class="article_list_widget ">
               <li>
                 <a href="<?php the_permalink(); ?>"  class="img-outer">
-                  <img src="<?php the_field('cover'); ?>" width="150" >
+                  <?php if(!(get_field('cover'))): ?>
+                   <img src="/images/no-pic.jpg"  width="150" height="124"/>
+                   <?php else: ?>
+                    <img src="<?php the_field('cover'); ?>" width="150" >
+                   <?php endif; ?>
                 </a>
                 <div class="text-outer" title="Rated 4 out of 5">
                   <h3>
@@ -36,20 +40,23 @@
                       <?php echo the_title(); ?> 
                     </a>
                   </h4>
+                  <p class="author">作者: <?php echo get_the_author(); ?><?php // the_field('tasting_date');?></p>
                   <p><strong>地址:</strong> <?php the_field('bar_address'); ?></p>
                   <p><strong>营业时间:</strong> <?php the_field('bar_bu_time'); ?></p>
                   <p><strong>电话: </strong><?php the_field('bar_tel'); ?></p>
                   <p><strong>交通:</strong> <?php the_field('bar_traffic'); ?></p>
                 </div>
 
-                <div class="post-date">
-                    <?php tagsAndAuthor(); ?>
+                <!-- <div class="post-date">
+
+
+                    <p><?php tagsAndAuthor(); ?>
                     <span><?php echo get_the_date('j F Y'); ?></span> 
                      &nbsp;/&nbsp; 
                     <a href="<?php echo the_permalink(); ?>#comments">
                     <?php echo $post->comment_count; ?> <?php echo __('comments', 'azul'); ?>
                     </a>
-                </div>
+                </div> -->
 
                 <div class="margin-bottom clear"></div>
               </li>

@@ -1,5 +1,12 @@
 <?php 
 
+function captitle($title) {
+$title = ucwords($title);
+
+return $title;
+}
+add_filter('wp_title', 'captitle');
+add_filter('the_title', 'captitle');
 
 function custome_jiathis($content, $post_id, $field) {
         $jiathis_code = get_option('jiathis_code');

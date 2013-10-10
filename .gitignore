@@ -14,3 +14,4 @@ wp-content/backups/
 sitemap.xml
 sitemap.xml.gz
 .idea
+drupal-7.23/*

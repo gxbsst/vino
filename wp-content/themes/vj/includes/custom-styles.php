@@ -338,6 +338,10 @@ switch(get_option('font_source_2')) {
     }
 
     @media (max-width: 979px) and (min-width: 768px) { 
+    .article_list_widget .text-outer {
+        width: 100%;
+    }
+
         .pricing-columns-5 .exposed {
             box-shadow: 0 0 0 10px <?php echo $primary_color; ?>, 
                         0 0 0 20px <?php echo $secondary_color; ?>; 
@@ -353,6 +357,11 @@ switch(get_option('font_source_2')) {
     }
 
     @media (max-width: 767px) {
+      
+
+        .article_list_widget .text-outer {
+            width: 100%;
+        }
 
         .pricing-columns-2 .pricing-table-column.exposed, .pricing-columns-3 .pricing-table-column.exposed, .pricing-columns-4 .pricing-table-column.exposed, .pricing-columns-5 .pricing-table-column.exposed {
             box-shadow: 0 0 0 12px <?php echo $primary_color; ?>, 
