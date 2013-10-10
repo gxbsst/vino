@@ -21,6 +21,10 @@
  display: block;
  float: left;
  margin-right: 20px;
+
+}
+.article_list_widget .img-outer img {
+	height: 125px;
 }
 .article_list_widget .text-outer {
 	float: left;
