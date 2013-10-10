@@ -32,7 +32,7 @@
                         <?php if(!(get_field('tasting_image'))): ?>
                             <img src="/images/no-pic.jpg"  width="150" height="124"/>
                         <?php else: ?>
-                        <img src="<?php the_field('tasting_image'); ?>" width="150" >
+                        <img src="<?php the_field('tasting_image'); ?>" width="150"  height="124" />
                         <?php endif; ?>
 					</a>
 					<div class="text-outer" title="Rated 4 out of 5">

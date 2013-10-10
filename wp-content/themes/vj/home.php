@@ -132,7 +132,7 @@ Template Name: home
 						<?php if(!(get_field('cover'))): ?>
 							<img src="/images/no-pic.jpg"  width="150" height="124"/>
 						<?php else: ?>
-						<img src="<?php the_field('cover'); ?>" width="150" >
+						<img src="<?php the_field('cover'); ?>" width="150" height="124" >
 						<?php endif; ?>
 					</a>
 					<div class="text-outer" title="Rated 4 out of 5">

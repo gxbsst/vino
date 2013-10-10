@@ -39,9 +39,9 @@
 if(!isset($fields))
     $fields =  array(
             'author' => '<p class="comment-form-author">' .
-                        '<input id="author" name="author" type="text" placeholder="' . __( 'Name', 'azul' ) . ( $req ? '*' : '') . '" size="30" /></p>',
+                        '<input id="author" name="author" type="text" placeholder="' . '您的名字' . ( $req ? '*' : '') . '" size="30" /></p>',
             'email'  => '<p class="comment-form-email">' .
-                        '<input id="email" name="email" type="text" placeholder="' . __( 'Email', 'azul' ) . ( $req ? '*' : '') . '" size="30" /></p>'
+                        '<input id="email" name="email" type="text" placeholder="' . '您的邮箱' . ( $req ? '*' : '') . '" size="30" /></p>'
     ); 
     $defaults = array(
     'fields'               => apply_filters( 'comment_form_default_fields', $fields ),

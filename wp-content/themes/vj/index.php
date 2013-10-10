@@ -29,7 +29,7 @@ Template Name: index
 			        <?php if('tasting' == get_post_type()): #品酒心得?>
 							<li>
 								<a href="<?php the_permalink(); ?>"  class="img-outer">
-									<img src="<?php the_field('tasting_image'); ?>" width="150" >
+									<img src="<?php the_field('tasting_image'); ?>" width="150" height="124" >
 								</a>
 								<div class="text-outer" title="Rated 4 out of 5">
 									<h3>
@@ -50,7 +50,7 @@ Template Name: index
 			          <?php elseif('bar' == get_post_type()):# 酒吧 ?>
 			            <li>
 			              <a href="<?php the_permalink(); ?>"  class="img-outer">
-			                <img src="<?php the_field('cover'); ?>" width="150" >
+			                <img src="<?php the_field('cover'); ?>" width="150" height="124" >
 			              </a>
 			              <div class="text-outer" title="Rated 4 out of 5">
 			                <h3>

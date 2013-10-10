@@ -45,7 +45,7 @@ var_dump($page);
         if (have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); 
         ?>
           <article class="span3 single-post2" style="height: 200px;">
-            <img src="<?php the_field('img');?>" width="150" / >
+            <img src="<?php the_field('img');?>" width="150" height="124" />
           <div class="single-post2-content" style="top: 151px; height: 168px;">
             <h4>
               <a href="<?php the_permalink(); ?> ">
