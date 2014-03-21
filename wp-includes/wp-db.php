@@ -832,7 +832,6 @@ class wpdb {
 
 		if ( !@mysql_select_db( $db, $dbh ) ) {
 			$this->ready = false;
-			$this->query("set session wait_timeout=600");
 			wp_load_translations_early();
 			$this->bail( sprintf( __( '<h1>Can&#8217;t select database</h1>
 <p>We were able to connect to the database server (which means your username and password is okay) but not able to select the <code>%1$s</code> database.</p>
@@ -1140,7 +1139,15 @@ class wpdb {
 		$client_flags = defined( 'MYSQL_CLIENT_FLAGS' ) ? MYSQL_CLIENT_FLAGS : 0;
 
 		if ( WP_DEBUG ) {
+			$error_reporting = false;
+			if ( defined( 'E_DEPRECATED' ) ) {
+				$error_reporting = error_reporting();
+				error_reporting( $error_reporting ^ E_DEPRECATED );
+			}
 			$this->dbh = mysql_connect( $this->dbhost, $this->dbuser, $this->dbpassword, $new_link, $client_flags );
+			if ( false !== $error_reporting ) {
+				error_reporting( $error_reporting );
+			}
 		} else {
 			$this->dbh = @mysql_connect( $this->dbhost, $this->dbuser, $this->dbpassword, $new_link, $client_flags );
 		}
@@ -1181,8 +1188,14 @@ class wpdb {
 	function query( $query ) {
 		if ( ! $this->ready )
 			return false;
-
-		// some queries are made before the plugins have been loaded, and thus cannot be filtered with this method
+		/**
+		 * Filter the database query.
+		 *
+		 * Some queries are made before the plugins have been loaded, and thus cannot be filtered with this method.
+		 *
+		 * @since 2.1.0
+		 * @param string $query Database query.
+		 */
 		$query = apply_filters( 'query', $query );
 
 		$return_val = 0;

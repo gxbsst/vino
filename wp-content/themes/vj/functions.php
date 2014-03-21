@@ -1,5 +1,6 @@
 <?php 
 
+
 function captitle($title) {
 $title = ucwords($title);
 

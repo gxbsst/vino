@@ -215,6 +215,8 @@ class MC4WP_Lite_Checkbox
 		if(!isset($_POST['mc4wp-do-subscribe']) || !$_POST['mc4wp-do-subscribe']) { return false; }
 		
 		$_POST['mc4wp-try-subscribe'] = 1;
+		unset($_POST['mc4wp-do-subscribe']);
+
 		return $this->subscribe_from_whatever();
 	}
 	/* End Contact Form 7 functions */
@@ -228,24 +230,29 @@ class MC4WP_Lite_Checkbox
 		$email = null;
 		$merge_vars = array();
 
-		// Add all fields with name attribute "mc4wp-*" to merge vars
 		foreach($_POST as $key => $value) {
 
 			if($key == 'mc4wp-try-subscribe') { 
 				continue; 
-			} elseif(!$email && is_email($value)) {
-				// find e-mail field
-				$email = $value;
-			} elseif(in_array($key, array('name', 'your-name', 'NAME', 'username', 'fullname'))) {
-				// find name field
-				$merge_vars['NAME'] = $value;
-			} elseif(substr($key, 0, 5) == 'mc4wp-') {
+			} elseif(strtolower(substr($key, 0, 6)) == 'mc4wp-') {
 				// find extra fields which should be sent to MailChimp
-				$key = strtoupper(substr($key, 5));
+				$key = strtoupper(substr($key, 6));
 
-				if(!isset($merge_vars[$key])) {
+				if($key == 'EMAIL') {
+					$email = $value;
+				} elseif(!isset($merge_vars[$key])) {
+					// if value is array, convert to comma-delimited string
+					if(is_array($value)) { $value = implode(',', $value); }
+
 					$merge_vars[$key] = $value;
 				}
+
+			} elseif(!$email && is_email($value)) {
+				// find first email field
+				$email = $value;
+			} elseif(!isset($merge_vars['NAME']) && in_array(strtolower($key), array('name', 'your-name', 'username', 'fullname', 'full-name'))) {
+				// find name field
+				$merge_vars['NAME'] = $value;
 			}
 		}
 
@@ -321,12 +328,35 @@ class MC4WP_Lite_Checkbox
 				$merge_vars['FNAME'] = $merge_vars['NAME'];
 			}
 		}
+
+		$merge_vars = apply_filters('mc4wp_merge_vars', $merge_vars);
+		$email_type = apply_filters('mc4wp_email_type', 'html');
 		
 		foreach($lists as $list) {
-			$result = $api->subscribe($list, $email, $merge_vars, 'html', $opts['double_optin']);
+			$result = $api->subscribe($list, $email, $merge_vars, $email_type, $opts['double_optin']);
+
+			if($result === true) { 
+				$from_url = (isset($_SERVER['HTTP_REFERER'])) ? $_SERVER['HTTP_REFERER'] : '';
+				do_action( 'mc4wp_subscribe_checkbox', $email, $list, $merge_vars );
+			}
+		}
+		
+		// check if result succeeded, show debug message to administrators
+		if($result !== true && $api->has_error() && current_user_can('manage_options') && !defined("DOING_AJAX")) 
+		{
+			wp_die("
+					<h3>MailChimp for WP - Error</h3>
+					<p>The MailChimp server returned the following error message as a response to our sign-up request:</p>
+					<pre>" . $api->get_error_message() . "</pre>
+					<p>This is the data that was sent to MailChimp: </p>
+					<strong>Email</strong>
+					<pre>{$email}</pre>
+					<strong>Merge variables</strong>
+					<pre>" . print_r($merge_vars, true) . "</pre>
+					<p style=\"font-style:italic; font-size:12px; \">This message is only visible to administrators for debugging purposes.</p>
+					", "Error - MailChimp for WP", array('back_link' => true));
 		}
 
-		// flawed, add retry option.
 		return $result;
 	}
 
